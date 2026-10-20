@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GrabKarlo — Coming Soon | Shop. Save. Get Cashback.</title>
+<meta name="description" content="GrabKarlo is coming soon — India's smart way to shop and earn cashback on Flipkart, Amazon, Myntra, Ajio and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--b1:#1d4ed8;--b2:#2563eb;--b3:#38bdf8;--ink:#0f172a;--mut:#64748b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--ink);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow-x:hidden;
+background:#fff radial-gradient(circle,rgba(37,99,235,.09) 1.5px,transparent 1.6px) 0 0/22px 22px}
+body:before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle at 20% 20%,rgba(56,189,248,.18),transparent 40%),radial-gradient(circle at 80% 80%,rgba(37,99,235,.15),transparent 45%);z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(4%,-3%)}}
+.float{position:fixed;font-size:34px;opacity:.55;animation:fl 7s ease-in-out infinite;z-index:-1;filter:drop-shadow(0 6px 10px rgba(37,99,235,.25))}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-22px) rotate(6deg)}}
+main{width:100%;max-width:640px;padding:48px 22px 24px;text-align:center}
+.fade{opacity:0;transform:translateY(18px);animation:in .8s ease forwards}
+@keyframes in{to{opacity:1;transform:none}}
+.logo{font-size:clamp(44px,12vw,76px);font-weight:800;letter-spacing:-1.5px;background:linear-gradient(90deg,var(--b1),var(--b3),var(--b2),var(--b1));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:in .8s ease forwards,shine 5s linear infinite}
+@keyframes shine{to{background-position:300% 0}}
+.badge{display:inline-block;padding:7px 16px;border-radius:99px;background:#eff6ff;color:var(--b1);font-weight:600;font-size:13px;letter-spacing:2px;border:1px solid #bfdbfe;margin-bottom:18px}
+.tag{font-size:clamp(18px,4.8vw,24px);font-weight:600;margin-top:6px}
+.tag span{color:var(--b2)}
+p.sub{color:var(--mut);margin:12px auto 0;max-width:460px;font-size:15px;line-height:1.6}
+.loader{margin:30px auto 8px;width:min(320px,85%);height:10px;border-radius:99px;background:#e0ecff;overflow:hidden;position:relative}
+.loader i{position:absolute;inset:0;width:40%;border-radius:99px;background:linear-gradient(90deg,var(--b2),var(--b3));animation:load 2.2s ease-in-out infinite}
+@keyframes load{0%{left:-40%}100%{left:100%}}
+.lt{font-size:13px;color:var(--b1);font-weight:600}.lt b{animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.2}}
+form{display:flex;gap:8px;margin:28px auto 0;max-width:440px;background:#fff;padding:6px;border-radius:16px;box-shadow:0 10px 30px rgba(37,99,235,.15);border:1px solid #dbeafe}
+input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:15px;padding:12px}
+button{border:0;cursor:pointer;font:inherit;font-weight:600;color:#fff;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg,var(--b1),var(--b3));animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,99,235,.45)}50%{box-shadow:0 0 0 10px rgba(37,99,235,0)}}
+.x{display:none;margin:28px auto 0;max-width:440px;padding:16px;border-radius:16px;background:#ecfdf5;color:#047857;font-weight:600;border:1px solid #a7f3d0}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}
+.chips span{padding:8px 16px;border-radius:99px;background:#fff;border:1px solid #dbeafe;font-weight:600;font-size:14px;color:var(--b1);box-shadow:0 4px 12px rgba(37,99,235,.08);animation:in .6s ease forwards,bob 3s ease-in-out infinite;opacity:0}
+@keyframes bob{50%{transform:translateY(-4px)}}
+.cl{font-size:12px;color:var(--mut);margin-top:26px;letter-spacing:1px}
+.zolo{display:inline-flex;flex-direction:column;align-items:center;gap:2px;margin:36px auto 0;padding:12px 26px;border-radius:16px;background:#fff;border:1px solid transparent;background-image:linear-gradient(#fff,#fff),linear-gradient(90deg,var(--b1),var(--b3),var(--b1));background-origin:border-box;background-clip:padding-box,border-box;box-shadow:0 8px 24px rgba(37,99,235,.14)}
+.zl{font-size:14px;color:var(--mut)}.zl b{font-weight:800;font-size:16px;background:linear-gradient(90deg,var(--b1),var(--b3),var(--b1));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+.zs{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--b1);font-weight:600}
+footer{padding:22px;color:var(--mut);font-size:13px}
+@media(max-width:420px){form{flex-direction:column}button{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
+</style></head><body>
+<div class="float" style="top:8%;left:6%">🛍️</div><div class="float" style="top:14%;right:8%;animation-delay:-2s">🎟️</div>
+<div class="float" style="bottom:18%;left:9%;animation-delay:-4s">💰</div><div class="float" style="bottom:10%;right:7%;animation-delay:-1s">🏷️</div>
+<div class="float" style="top:46%;left:3%;animation-delay:-3s;font-size:26px">🛒</div><div class="float" style="top:52%;right:6%;animation-delay:-5s;font-size:26px">%</div>
+<main>
+<div class="badge fade">COMING SOON</div>
+<h1 class="logo">GrabKarlo</h1>
+<div class="tag fade" style="animation-delay:.25s">Shop. Save. <span>Get Cashback.</span></div>
+<p class="sub fade" style="animation-delay:.45s">India's smartest way to shop online. Best deals, exclusive coupons and real cashback on your favourite stores — launching very soon!</p>
+<div class="fade" style="animation-delay:.65s"><div class="loader"><i></i></div><div class="lt">We're getting things ready<b>...</b></div></div>
+<div class="cl fade" style="animation-delay:1s">CASHBACK ON TOP STORES</div>
+<div class="chips"><span style="animation-delay:1.1s,0s">Flipkart</span><span style="animation-delay:1.2s,.4s">Amazon</span><span style="animation-delay:1.3s,.8s">Myntra</span><span style="animation-delay:1.4s,1.2s">Ajio</span></div>
+<div class="zolo fade" style="animation-delay:1.6s"><span class="zl">Crafted by <b>Zolo</b></span><span class="zs">Website &amp; App Development</span></div>
+</main>
+<footer>© 2026 GrabKarlo. All rights reserved.</footer>
+</body></html>
